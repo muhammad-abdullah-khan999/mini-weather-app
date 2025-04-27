@@ -18,7 +18,7 @@ form.addEventListener('submit', async (e) => {
   loading.classList.remove('hidden');
 
   try {
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}=${city}`);
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}=${city}`);
     
     if (!response.ok) {
       throw new Error('❌ City not found. Try again!');
