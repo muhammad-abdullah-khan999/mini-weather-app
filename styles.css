@@ -99,6 +99,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-right: 100px;
 }
 
 button:hover {
@@ -134,13 +135,13 @@ button:hover {
   font-size: 3rem;
   font-weight: 600;
   margin: 15px 0;
-  color: #ff6f61; /* Red accent */
+  color: #ff6f61;
 }
 
 .last-update {
   margin-top: 10px;
   font-size: 1rem;
-  color: #aaa; /* Light gray */
+  color: #aaa; 
 }
 
 .error {
