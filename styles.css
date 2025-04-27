@@ -1,11 +1,8 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Body Styling */
 body {
   background: #1e2024;
   font-family: 'Outfit', sans-serif;
@@ -20,7 +17,6 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-/* Background */
 .background-container {
   position: absolute;
   top: 0;
@@ -32,7 +28,6 @@ body {
   animation: backgroundMove 80s linear infinite;
 }
 
-/* Keyframe for animated background */
 @keyframes backgroundMove {
   from {
     background-position: 0 0;
@@ -42,7 +37,6 @@ body {
   }
 }
 
-/* Wrapper */
 .wrapper {
   width: 100%;
   max-width: 450px;
@@ -50,7 +44,6 @@ body {
   z-index: 10;
 }
 
-/* Card */
 .card {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
@@ -62,7 +55,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* App Title */
 .app-title {
   font-weight: 700;
   font-size: 2rem;
@@ -71,7 +63,6 @@ body {
   text-shadow: 2px 2px 10px rgba(0, 0, 255, 0.7);
 }
 
-/* Form Styling */
 .form {
   display: flex;
   gap: 10px;
@@ -95,10 +86,9 @@ input[type="text"]::placeholder {
 }
 
 input[type="text"]:focus {
-  border-color: #ff77ff; /* Purple focus accent */
+  border-color: #ff77ff; 
 }
 
-/* Button Styling */
 button {
   padding: 15px 25px;
   background: linear-gradient(135deg, #00d9ff, #ff77ff);
@@ -116,7 +106,6 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* Spinner */
 .spinner {
   width: 50px;
   height: 50px;
@@ -127,7 +116,6 @@ button:hover {
   margin: 30px auto;
 }
 
-/* Weather Info */
 .weather {
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -158,15 +146,13 @@ button:hover {
 .error {
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #ff6347; /* Red error accent */
+  color: #ff6347;
 }
 
-/* Hidden Utility */
 .hidden {
   display: none;
 }
 
-/* Animations */
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -183,7 +169,6 @@ button:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   .card {
     padding: 1.5rem;
