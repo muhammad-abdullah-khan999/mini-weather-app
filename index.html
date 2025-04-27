@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherNow 🌙</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background-container"></div>
+
+  <div class="wrapper">
+
+    <div class="card">
+      <h1 class="app-title">🌙 WeatherNow</h1>
+
+      <form id="weather-form" class="form">
+        <input type="text" id="city-input" placeholder="Enter city..." required autocomplete="off" />
+        <button type="submit">🔍 Find</button>
+      </form>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+      </div>
+
+      <div id="weather-info" class="weather hidden">
+        <img id="weather-icon" alt="Weather Icon" />
+        <h2 id="city-name"></h2>
+        <div class="temperature">
+          <span id="temperature"></span><span>°C</span>
+        </div>
+        <p id="condition"></p>
+        <p id="last-updated" class="last-update"></p>
+      </div>
+
+      <div id="error-message" class="error hidden"></div>
+    </div>
+
+  </div>
+
+  <script src="weather-app.js"></script>
+</body>
+</html>
