@@ -29,11 +29,8 @@ JavaScript (Fetch API)
 Data fetched from WeatherAPI.com.
 
 ⚠️ Make sure to insert your own API key in weather-app.js:
-
-javascript
-Copy
-Edit
 const apiKey = 'YOUR_API_KEY_HERE';
+
 🎨 UI/UX Features
 Clean and minimal dark theme
 
